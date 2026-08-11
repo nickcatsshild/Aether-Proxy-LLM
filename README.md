@@ -5,11 +5,11 @@
   
   **Nunca pare de codar. Economize até 40% de tokens com compressão inteligente (RTK) e roteamento automático para modelos GRÁTIS e acessíveis.**
 
-  [![GitHub release](https://img.shields.io/github/v/release/nickcatsshild/Aether-Proxy-LLM-Releses?style=flat-square)](https://github.com/nickcatsshild/Aether-Proxy-LLM-Releses/releases)
+  [![GitHub release](https://img.shields.io/github/v/release/nickcatsshild/Aether-Proxy-LLM?style=flat-square)](https://github.com/nickcatsshild/Aether-Proxy-LLM/releases)
   [![Docker Pulls](https://img.shields.io/docker/pulls/catsavengers/aether-proxy-llm.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/catsavengers/aether-proxy-llm)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
-  [🚀 Comece Agora](#-como-instalar) • [⚙️ Recursos](#-recursos-principais) • [🧠 Modelos Suportados](#-provedores-e-modelos) • [📚 Wiki](https://github.com/nickcatsshild/Aether-Proxy-LLM-Releses)
+  [🚀 Comece Agora](#-como-instalar) • [⚙️ Recursos](#-recursos-principais) • [🧠 Modelos Suportados](#-provedores-e-modelos) • [📚 Wiki](https://github.com/nickcatsshild/Aether-Proxy-LLM/wiki)
 </div>
 
 ---
@@ -36,7 +36,7 @@ Ideal para desenvolvedores que querem rodar o Aether na própria máquina de for
 Desenvolvido para Windows 10 e 11.
 Basta descompactar o zip e executar o binario, talves seja necessario liberar para o firewall do Windows deixar acessar pela Rede Lan.
 
-1. Baixe o arquivo **[Aether-Windows-Release.zip](./Aether-Windows-Release.zip)**.
+1. Baixe o arquivo **Aether-Windows-Release.zip** na aba [Releases](https://github.com/nickcatsshild/Aether-Proxy-LLM/releases/latest).
 2. **IMPORTANTE:** Extraia o arquivo `.zip` para uma pasta de sua escolha (ex: `C:\Aether`).
 3. Clique duas vezes no arquivo `Aether.exe` para executar. **Pronto!** *(Não exige NodeJS, Python ou Docker).*
 
