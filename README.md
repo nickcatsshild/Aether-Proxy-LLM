@@ -32,11 +32,12 @@ Temos 3 versões disponíveis para você escolher a que melhor se adapta ao seu 
 
 ### 1️⃣ Windows Portable (Recomendado para uso local)
 
-Ideal para desenvolvedores que querem rodar o Aether na própria máquina sem complicação.
+Ideal para desenvolvedores que querem rodar o Aether na própria máquina de forma isolada, sem sujar o sistema.
 
 1. Acesse a aba **Releases** aqui no GitHub.
-2. Baixe o arquivo `Aether.exe`.
-3. Clique duas vezes para executar. **Pronto!** *(Não exige NodeJS, Python ou Docker).*
+2. Baixe o arquivo `Aether-Windows-Release.zip`.
+3. **IMPORTANTE:** Extraia o arquivo `.zip` para uma pasta de sua escolha (ex: `C:\Aether`).
+4. Clique duas vezes no arquivo `Aether.exe` para executar. **Pronto!** *(Não exige NodeJS, Python ou Docker).*
 
 ### 2️⃣ Docker & CasaOS (Recomendado para NAS/Servidores)
 
