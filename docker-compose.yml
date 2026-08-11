@@ -1,0 +1,62 @@
+name: aether-proxy-llm
+services:
+  aether:
+    image: catsavengers/aether-proxy-llm:latest
+    container_name: aether
+    restart: unless-stopped
+    ports:
+      - "20128:20128"
+    volumes:
+      - /DATA/AppData/aether/data:/app/data
+    environment:
+      DATA_DIR: /app/data
+      PORT: "20128"
+      HOSTNAME: "0.0.0.0"
+      NODE_ENV: production
+      HEADROOM_URL: http://headroom:8787
+    depends_on:
+      - headroom
+    x-casaos:
+      envs:
+        - container: DATA_DIR
+          description:
+            en_us: Directory for application data
+        - container: PORT
+          description:
+            en_us: Application port
+      ports:
+        - container: "20128"
+          description:
+            en_us: Web UI and API Port
+      volumes:
+        - container: /app/data
+          description:
+            en_us: Persistent data storage
+
+  headroom:
+    image: ghcr.io/chopratejas/headroom:latest
+    container_name: headroom
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+
+x-casaos:
+  architectures:
+    - amd64
+    - arm64
+  main: aether
+  description:
+    en_us: Aether Proxy LLM is a powerful routing gateway and dashboard for 40+ AI providers.
+    pt_br: Aether Proxy LLM é um poderoso gateway de roteamento e painel para mais de 40 provedores de IA.
+  tagline:
+    en_us: AI routing gateway & dashboard
+    pt_br: Gateway e dashboard de roteamento de IA
+  developer: nickcatsshild
+  author: nickcatsshild
+  icon: https://raw.githubusercontent.com/nickcatsshild/Aether-Proxy-LLM/main/docker/icon-black.png
+  thumbnail: https://raw.githubusercontent.com/nickcatsshild/Aether-Proxy-LLM/main/docker/icon-black.png
+  title:
+    en_us: Aether Proxy LLM
+  category: Utilities
+  port_map: "20128"
+
