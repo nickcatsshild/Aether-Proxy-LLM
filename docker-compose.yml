@@ -37,8 +37,11 @@ services:
     image: ghcr.io/chopratejas/headroom:latest
     container_name: headroom
     restart: unless-stopped
-    ports:
-      - "8787:8787"
+    expose:
+      - "8787"
+
+  # Local LLM binários são baixados em DATA_DIR/bin via scripts/fetch-llama.sh
+  # e rodam in-process (127.0.0.1, portas efêmeras por slot) — sem sidecar extra.
 
 x-casaos:
   architectures:
