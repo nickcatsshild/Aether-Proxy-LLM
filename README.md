@@ -93,6 +93,10 @@ O **Aether Proxy LLM Core** é uma plataforma corporativa completa para orquestr
 
 ## 🏛 Arquitetura do Sistema
 
+<div align="center">
+  <img src="./images/aether.png" alt="Arquitetura do Aether Proxy LLM" width="680"/>
+</div>
+
 ```
                         [ Clientes Externos ]
        OpenCode · Cursor · Continue · Obsidian · Scripts · CLI
@@ -150,6 +154,10 @@ O Aether possui um subsistema autônomo para gerenciamento do `llama-server`:
 ---
 
 ## 🛡 Combos & Cadeias de Resiliência (Failover)
+
+<div align="center">
+  <img src="./images/combos.png" alt="Pipeline de Combos e Resiliência" width="680"/>
+</div>
 
 - **Estratégia Fallback**: Tenta o modelo principal; se houver erro (HTTP 429, 500, 502, 504), chave esgotada ou timeout, salta imediatamente para o próximo modelo sem perder o contexto do usuário.
 - **Estratégia Round-Robin**: Alterna uniformemente as requisições entre os modelos do combo, ideal para distribuir carga em contas gratuitas com limites de requisições por minuto.
